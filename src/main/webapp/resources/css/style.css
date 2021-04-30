@@ -9,3 +9,43 @@ body{
 	width: 25em;
 	margin: 1em auto;
 }
+
+.setup .setup-list-item{	
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+.setup .setup-list-item .setup-list-detail{
+	 flex: 1 1 0;
+    -ms-flex: 1 1 0;
+}
+
+
+.setup .setup-name{
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+
+.setup .setup-description {
+    margin: 0 0 1rem 0;
+}
+
+
+.setup .setup-list-item .setup-list-action {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
+
+.setup .setup-list-item .setup-price {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: .5rem;
+    align-self: flex-end;
+}
