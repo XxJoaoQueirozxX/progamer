@@ -4,13 +4,13 @@ import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
 
+import br.com.fiap.singleton.EntityManagerFactorySingleton;
+
 
 public abstract class  JPAUtil {
-	private static final String persistence = "progamer-persistence-unit";
-	
 	
 	public static EntityManager getEntityManager() {
-		EntityManagerFactory emf = Persistence.createEntityManagerFactory(persistence);
+		EntityManagerFactory emf = EntityManagerFactorySingleton.getInstance();
 		EntityManager em = emf.createEntityManager();
 		return em;
 	}
