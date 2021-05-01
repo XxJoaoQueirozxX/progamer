@@ -69,7 +69,7 @@
 
 				<f:facet name="footer">
 					<p:commandButton icon="pi pi-check" value="Save"
-						action="#{userBean.save}">
+						action="#{userBean.save}" update="users" >
 						<f:ajax event="click" execute="@form" render="messages users" />
 					</p:commandButton>
 					<p:commandButton icon="pi pi-times" value="Cancel"
@@ -79,7 +79,7 @@
 			</p:card>
 
 
-			<p:dataTable value="#{userBean.users}" var="user" id="users">
+			<p:dataTable value="#{userBean.users}" var="user" id="users" >
 				<p:column headerText="Nome">
 					<h:outputText value="#{user.name}" />
 				</p:column>

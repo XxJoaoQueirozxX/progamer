@@ -57,8 +57,8 @@
 
 				<f:facet name="footer">
 					<p:commandButton icon="pi pi-check" value="Save"
-						action="#{setupBean.save}" >
-						<f:ajax event="click" execute="@form" render="messages table"/>	
+						action="#{setupBean.save}" update="table">
+						<f:ajax event="click" execute="@form" render="messages table" />	
 					</p:commandButton>
 					<p:commandButton icon="pi pi-times" value="Cancel"
 						styleClass="ui-button-secondary" style="margin-left: .5em" />
